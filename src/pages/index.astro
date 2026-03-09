@@ -48,7 +48,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 					// @ts-nocheck
 					window.addEventListener('DOMContentLoaded', (event) => {
 							// @ts-ignore
-							new PagefindUI({ element: "#search", showSubResults: true });
+							new PagefindUI({ 
+								element: "#search",
+								showSubResults: true,
+								debounceTimeoutMs: 500,
+								showImages: false, 
+							});
 					});
 			</script>
 		</main>
